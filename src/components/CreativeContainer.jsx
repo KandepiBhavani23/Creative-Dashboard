@@ -41,7 +41,7 @@ const CreativeContainer = () => {
   };
 
   return (
-    <section className="max-w-xl m-auto my-10 bg-white border-4 border-black rounded-lg lg:max-w-6xl">
+    <section className="max-w-xl m-auto my-10 bg-white border-4 border-black rounded-lg md:max-w-3xl lg:max-w-4xl xl:max-w-6xl">
       <Header />
       <div className={`flex ${isFormOpen ? "flex-row" : "flex-col"}  h-[80vh]`}>
         <div
@@ -50,7 +50,7 @@ const CreativeContainer = () => {
           } overflow-y-auto`}>
           <div className="max-w-md mb-16">
             <h1 className="text-xl font-bold">Filter By:</h1>
-            <div className="flex justify-between mt-5">
+            <div className="flex flex-col mt-5 sm:space-y-7 lg:space-y-0 sm:flex-start lg:flex-row lg:justify-between">
               <ColorPalette
                 onSelectColor={handleColorSelection}
                 selectedColor={selectedColor}

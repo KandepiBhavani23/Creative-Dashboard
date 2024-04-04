@@ -63,7 +63,7 @@ const NewCreative = ({ onClose, onSubmit }) => {
         </form>
       </div>
       <button
-        className={`absolute px-2 py-1 text-sm border-2 rounded-sm bottom-10 left-9 w-28 ${
+        className={`absolute px-2 py-1 text-sm border-2 rounded-sm bottom-1 sm:bottom-2 xl:bottom-9 lg:bottom-5 left-9 w-28 ${
           !formData.title || !formData.subtitle || !selectedColor
             ? "border-gray-400 text-gray-400"
             : "border-slate-800"
