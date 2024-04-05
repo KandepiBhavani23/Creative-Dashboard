@@ -3,9 +3,9 @@ import CreativeContainer from "./components/CreativeContainer";
 
 const App = () => {
   return (
-    <div>
+    <main>
       <CreativeContainer />
-    </div>
+    </main>
   );
 };
 

@@ -75,10 +75,12 @@ const CreativeContainer = () => {
             {filteredCreatives.map((creative, index) => (
               <div
                 key={index}
-                className="flex flex-col h-32 p-10 mb-4 space-y-1 border-2 rounded-md border-slate-800"
+                className="flex flex-col p-5 mb-4 space-y-2 border-2 rounded-md border-slate-800"
                 style={{ backgroundColor: creative.selectedColor }}>
-                <h2 className="text-2xl font-bold">{creative.title}</h2>
-                <p className="text-sm">{creative.subtitle}</p>
+                <h2 className="text-2xl font-bold whitespace-normal">
+                  {creative.title}
+                </h2>
+                <p className="text-sm whitespace-normal">{creative.subtitle}</p>
               </div>
             ))}
           </div>
